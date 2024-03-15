@@ -16,3 +16,16 @@ square_gen = SquareGenerator()
 start = 1
 end = 10
 print("List of squares from {} to {}: ".format(start, end), square_gen.generate_squares(start, end))
+#task4
+import math
+class SquareGenerator:
+    def generate_squares(self, start, end):
+        return [x**2 for x in range(start, end + 1)]
+    def calculate_square_roots(self, squares):
+        return [math.sqrt(num) for num in squares]
+square_gen = SquareGenerator()
+start = 1
+end = 10
+squares = square_gen.generate_squares(start, end)
+print("List of squares from {} to {}: ".format(start, end), squares)
+print("Square roots of the numbers:", square_gen.calculate_square_roots(squares))
