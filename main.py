@@ -47,3 +47,4 @@ try:
     print("List of squares from {} to {}: ".format(start, end), squares)
 except ValueError as ve:
     print("Error:", ve)
+#task6
